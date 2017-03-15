@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>截取字符</title>
+    <script>
+        var ss = "3.1415926";
+        var s = "1234567890";
+
+        //返回ss中索引为3的字符
+        console.log( ss.charAt(3) );
+
+        //从前往后 找到 "." 并返回其索引
+        console.log( ss.indexOf(".") );
+
+        //从后往前 找到 "." 并返回其索引
+        console.log( ss.lastIndexOf(".") );
+
+        //1个参数 从索引为3的位置开始 截取后面的所有字符
+        console.log( s.slice(3) );
+
+        //2个参数 从索引为3的位置开始 截取到索引为5的字符 不含5
+        console.log( s.slice(3, 5) );
+
+
+        //1个参数 从索引为3的位置开始 截取后面的所有字符
+        console.log( s.substr(3) );
+
+        //2个参数 从索引为3的位置开始[以索引3为第1个] 向后取5个
+        console.log( s.substr(3, 5) );
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
